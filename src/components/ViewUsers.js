@@ -17,7 +17,7 @@ function ViewUsers({users}) {
             <th scope="row">{users.userId}</th>
             <td>{users.firstName}</td>
             <td>{users.lastName}</td>
-            <td>@mdo</td>
+            <td>{users.email}</td>
           </tr>
         </tbody>
       </table>

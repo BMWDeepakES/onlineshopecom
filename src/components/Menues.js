@@ -1,16 +1,18 @@
 import React from "react";
+import { Link, Links } from "react-router-dom";
 import { ListGroup, ListGroupItem } from "reactstrap";
 
 const Menues = () => {
   return (
     <div className="container my-2">
       <ListGroup as="ul">
-        <ListGroupItem as="li" tag="a" href="/home" active> Home </ListGroupItem>
-        <ListGroupItem as="li" tag="a" href="#"> Customers </ListGroupItem>
-        <ListGroupItem as="li" tag="a" href="#"> Products </ListGroupItem>
-        <ListGroupItem as="li" tag="a" href="#"> Orders </ListGroupItem>
-        <ListGroupItem as="li" tag="a" href="#"> Stocks </ListGroupItem>
-        <ListGroupItem as="li" tag="a" href="#"> Account Setting </ListGroupItem>
+        <Link className="list-group-item list-group-action" as="li" tag="a" to="/home" active> Home </Link>
+        <Link className="list-group-item list-group-action" as="li" tag="a" to="/user-view"> Users </Link>
+        <Link className="list-group-item list-group-action" as="li" tag="a" to="/user-register"> Register User </Link>
+
+        <Link className="list-group-item list-group-action" as="li" tag="a" to="#"> Orders </Link>
+        <Link className="list-group-item list-group-action" as="li" tag="a" to="#"> Stocks </Link>
+        <Link className="list-group-item list-group-action" as="li" tag="a" to="#"> Account Setting </Link>
       </ListGroup>
     </div>
   );
